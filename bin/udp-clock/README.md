@@ -1,18 +1,16 @@
-## Getting Started
+# Sistema Distribuído de Relógio Mundial (TCP/UDP)
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Resumo do Projeto
+Atividade prática desenvolvida para aprofundar os conhecimentos em Sockets Java, explorando as diferenças entre os protocolos UDP e TCP. O sistema permite que um cliente consulte a data e hora exatas de diferentes regiões geográficas.
 
-## Folder Structure
+## Estrutura do Repositório
+- `/udp-clock`: Versão 1 - Comunicação via datagramas (UDP) com timeout no cliente.
+- `/tcp-clock-simple`: Versão 2 - (A desenvolver).
+- `/tcp-clock-multithread`: Versão 3 - (A desenvolver).
 
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Instruções de Execução (Versão 1 - UDP)
+1. Abre o terminal e navega até à pasta `/udp-clock`.
+2. Compila os ficheiros Java: `javac UDPServer.java UDPClient.java`
+3. Inicia o servidor num terminal: `java UDPServer`
+4. Abre outro terminal e inicia o cliente: `java UDPClient`
+5. Insere uma região válida (ex: `Europe/Lisbon` ou `America/Sao_Paulo`).
