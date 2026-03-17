@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 /**
  * @author Sávio Issa de Sousa
- * @date 11/03/2026
+ * @date 17/03/2026
  * @summary Cliente UDP com timeout de 5 segundos para consulta de fuso horário.
  */
 public class UDPClient {
@@ -18,7 +18,7 @@ public class UDPClient {
             // Requisito: Timeout de 5 segundos
             clientSocket.setSoTimeout(5000);
 
-            System.out.print("Digite a região (ex: America/Sao_Paulo): ");
+            System.out.print("Digita a região (ex: America/Sao_Paulo): ");
             String region = scanner.nextLine();
 
             InetAddress IPAddress = InetAddress.getByName(hostname);
