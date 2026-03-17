@@ -5,7 +5,7 @@ Atividade prática desenvolvida para aprofundar os conhecimentos em Sockets Java
 
 ## Estrutura do Repositório
 - `/udp-clock`: Versão 1 - Comunicação via datagramas (UDP) com timeout no cliente.
-- `/tcp-clock-simple`: Versão 2 - (A desenvolver).
+- `/tcp-clock-simple`: Versão 2 - Comunicação orientada à conexão (TCP Single-Thread).
 - `/tcp-clock-multithread`: Versão 3 - (A desenvolver).
 
 ## Instruções de Execução (Versão 1 - UDP)
@@ -14,3 +14,10 @@ Atividade prática desenvolvida para aprofundar os conhecimentos em Sockets Java
 3. Inicia o servidor num terminal: `java UDPServer`
 4. Abre outro terminal e inicia o cliente: `java UDPClient`
 5. Insere uma região válida (ex: `Europe/Lisbon` ou `America/Sao_Paulo`).
+
+## Instruções de Execução (Versão 2 - TCP Single-Thread)
+1. Abre o terminal e navega até à pasta `/tcp-clock-simple`.
+2. Compila os ficheiros Java: `javac TCPServer.java TCPClient.java`
+3. Inicia o servidor num terminal: `java TCPServer`
+4. Abre outro terminal e inicia o cliente: `java TCPClient`
+5. Insere uma região válida e observa a resposta contínua via stream de dados.
