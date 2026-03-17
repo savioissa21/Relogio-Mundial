@@ -7,7 +7,7 @@ import java.net.UnknownHostException;
 import java.util.Scanner;
 
 /**
- * @author [O Teu Nome]
+ * @author [Sávio Issa de Sousa]
  * @date 17/03/2026
  * @summary Cliente TCP que conecta ao servidor, envia a região e recebe a hora formatada.
  */

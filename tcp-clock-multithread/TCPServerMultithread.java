@@ -9,7 +9,7 @@ import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 
 /**
- * @author [O Teu Nome]
+ * @author [Sávio Issa de Sousa]
  * @date 17/03/2026
  * @summary Servidor TCP Concorrente (Multithread) que atende múltiplos clientes em simultâneo.
  */
